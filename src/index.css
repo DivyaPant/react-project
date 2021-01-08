@@ -1,13 +1,140 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.header > hr {
+  padding: 0;
+  margin: 0 auto;
+  height: 0.5px;
+  background: silver;
+  opacity: 0.8;
+  border: 1px;
+  outline: none;
+}
+.header {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+}
+.max-width-header {
+  background-color: white;
+  max-width: 90rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0.5rem 6rem;
+}
+.recipeSearch {
+  padding: 10rem 6rem 2rem 6rem;
+}
+.recipe-max-width {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.header-content {
+  align-self: flex-end;
+}
+.header-content > .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.items > p {
+  padding: 1rem 2rem;
+  text-transform: uppercase;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 20rem;
+  height: 25rem;
+  max-width: 20rem;
+  border: 1px solid silver;
+  margin: 1rem;
+  padding: 1rem;
+  background: rgb(231, 227, 227);
+  border-radius: 0.6em;
+  overflow: hidden;
+  cursor: pointer;
+}
+.content > img {
+  object-fit: cover;
+}
+.search {
+  border-radius: 0.6rem;
+  background-image: url("./assets/food.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  background-clip: padding-box;
+}
+.max-width-search {
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1rem 6rem;
+}
+.searchPanel {
+  padding: 1rem 0;
+  display: flex;
+
+  justify-content: center;
+}
+.searchPanel > input {
+  padding: 0.5rem;
+  margin: 0 1rem;
+  width: 20rem;
+}
+.searchBtn {
+  max-width: fit-content;
+  color: #ffffff;
+  font-family: Helvetica;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 0.2rem 1rem;
+  background-color: #0ea322;
+  -webkit-box-shadow: 0 0 3px 0 #000000;
+  -moz-box-shadow: 0 0 3px 0 #000000;
+  box-shadow: 0 0 3px 0 #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+.blog {
+  padding: 1rem 5rem;
+}
+.blog-max-width {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.images {
+  display: flex;
+}
+.blog h2 {
+  padding: 1rem;
+  margin: 0;
+  font-family: sans-serif;
+}
+.images > img {
+  padding: 1rem;
+  width: 50%;
+  object-fit: cover;
 }
