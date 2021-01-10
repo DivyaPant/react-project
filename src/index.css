@@ -138,3 +138,18 @@ body {
   width: 50%;
   object-fit: cover;
 }
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  font-size: 30px;
+}
+.slick-prev {
+  left: 0;
+  z-index: 2;
+}
+.slick-next {
+  right: 0;
+}
+.slick-list {
+  padding: 0 3rem;
+}
